@@ -1,0 +1,25 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-662,-253",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0 threadsafe
+#  -string -flagsOSRD
+preplace port port-id_i_eth_ctl -pg 1 -lvl 0 -x -10 -y 270 -defaultsOSRD
+preplace port port-id_o_eth_reset -pg 1 -lvl 3 -x 570 -y 220 -defaultsOSRD
+preplace port port-id_i_eth_clk -pg 1 -lvl 0 -x -10 -y 70 -defaultsOSRD
+preplace portBus i_eth_data -pg 1 -lvl 0 -x -10 -y 250 -defaultsOSRD
+preplace inst rgmii_rx_0 -pg 1 -lvl 1 -x 180 -y 250 -defaultsOSRD
+preplace inst ila_0 -pg 1 -lvl 2 -x 460 -y 110 -defaultsOSRD
+preplace netloc i_eth_data_0_1 1 0 1 NJ 250
+preplace netloc rgmii_rx_0_o_eth_reset 1 1 2 NJ 220 NJ
+preplace netloc rgmii_rx_0_o_high_nibble 1 1 1 360 130n
+preplace netloc rgmii_rx_0_o_low_nibble 1 1 1 340 110n
+preplace netloc rgmii_rx_0_o_data 1 1 1 350 90n
+preplace netloc Net 1 0 2 20 150 N
+preplace netloc i_eth_clk 1 0 2 10 70 NJ
+levelinfo -pg 1 -10 180 460 570
+pagesize -pg 1 -db -bbox -sgen -160 0 700 350
+"
+}
+
