@@ -3,12 +3,12 @@
 # SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Sat Oct  3 22:02:18 2026
-# Process ID         : 35456
-# Current directory  : C:/01_FPGA_Workspace/ethernet_main/ethernet_main.runs/design_1_ila_0_0_synth_1
+# Start of session at: Tue Oct  6 01:20:56 2026
+# Process ID         : 29816
+# Current directory  : C:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.runs/design_1_ila_0_0_synth_1
 # Command line       : vivado.exe -log design_1_ila_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_ila_0_0.tcl
-# Log file           : C:/01_FPGA_Workspace/ethernet_main/ethernet_main.runs/design_1_ila_0_0_synth_1/design_1_ila_0_0.vds
-# Journal file       : C:/01_FPGA_Workspace/ethernet_main/ethernet_main.runs/design_1_ila_0_0_synth_1\vivado.jou
+# Log file           : C:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.runs/design_1_ila_0_0_synth_1/design_1_ila_0_0.vds
+# Journal file       : C:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.runs/design_1_ila_0_0_synth_1\vivado.jou
 # Running On         : killcrafterHD
 # Platform           : Windows Server 2016 or Windows 10
 # Operating System   : 26200
@@ -17,11 +17,12 @@
 # CPU Physical cores : 12
 # CPU Logical cores  : 20
 # Host memory        : 34122 MB
-# Swap memory        : 2550 MB
-# Total Virtual      : 36672 MB
-# Available Virtual  : 7237 MB
+# Swap memory        : 9475 MB
+# Total Virtual      : 43598 MB
+# Available Virtual  : 4618 MB
 #-----------------------------------------------------------
 source design_1_ila_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 503.598 ; gain = 211.129
 Command: synth_design -top design_1_ila_0_0 -part xc7a200tfbg484-2 -incremental_mode off -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
@@ -29,112 +30,112 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200
 INFO: [Device 21-403] Loading part xc7a200tfbg484-2
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 35296
+INFO: [Synth 8-7075] Helper process launched with PID 30980
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1269.473 ; gain = 493.082
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1271.059 ; gain = 494.520
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:30]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:32]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:69]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:71]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:109]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:111]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:150]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:152]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:192]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:194]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:235]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:237]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:279]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:281]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:324]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:326]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:370]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:372]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:417]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:419]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:465]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:467]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:514]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:516]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:564]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:566]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:615]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:617]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:30]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:32]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:69]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:71]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:109]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:111]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:150]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:152]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:192]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:194]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:235]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:237]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:279]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:281]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:324]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:326]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:370]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:372]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:417]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:419]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:465]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:467]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:514]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:516]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:564]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:566]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:615]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:617]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:30]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:32]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:65]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:67]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:100]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:102]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:135]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:137]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:170]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:172]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:205]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:207]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:240]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:242]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:275]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:277]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:310]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:312]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:345]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:347]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:380]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:382]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:415]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:417]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:450]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:452]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:485]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:487]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:30]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:32]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:65]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:67]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:100]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:102]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:135]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:137]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:170]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:172]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:205]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:207]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:240]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:242]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:275]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:277]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:30]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:32]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:69]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:71]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:109]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:111]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:150]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:152]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:192]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:194]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:235]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:237]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:279]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:281]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:324]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:326]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:370]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:372]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:417]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:419]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:465]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:467]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:514]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:516]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:564]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:566]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:615]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_ext.vh:617]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:30]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:32]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:69]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:71]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:109]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:111]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:150]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:152]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:192]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:194]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:235]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:237]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:279]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:281]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:324]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:326]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:370]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:372]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:417]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:419]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:465]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:467]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:514]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:516]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:564]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:566]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:615]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core.vh:617]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:30]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:32]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:65]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:67]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:100]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:102]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:135]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:137]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:170]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:172]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:205]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:207]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:240]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:242]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:275]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:277]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:310]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:312]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:345]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:347]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:380]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:382]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:415]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:417]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:450]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:452]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:485]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:487]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:30]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:32]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:65]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:67]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:100]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:102]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:135]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:137]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:170]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:172]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:205]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:207]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:240]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:242]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:275]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ipshared/537f/hdl/verilog/xsdbm_v3_0_4_bs_core_vec.vh:277]
 INFO: [Common 17-14] Message 'Synth 8-11241' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-6157] synthesizing module 'design_1_ila_0_0' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/synth/design_1_ila_0_0.v:48]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ila_0_0' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/synth/design_1_ila_0_0.v:48]
 INFO: [Synth 8-6157] synthesizing module 'CFGLUT5' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:3131]
 INFO: [Synth 8-6155] done synthesizing module 'CFGLUT5' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:3131]
 INFO: [Synth 8-6157] synthesizing module 'CARRY4' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:3094]
@@ -147,16 +148,34 @@ INFO: [Synth 8-6157] synthesizing module 'SRLC16E' [C:/Xilinx/2025.1/Vivado/scri
 INFO: [Synth 8-6155] done synthesizing module 'SRLC16E' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:158701]
 INFO: [Synth 8-6157] synthesizing module 'FDRE' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:44231]
 INFO: [Synth 8-6155] done synthesizing module 'FDRE' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:44231]
-WARNING: [Synth 8-7071] port 'clk_nobuf' of module 'ila_v6_2_18_ila' is unconnected for instance 'inst' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/synth/design_1_ila_0_0.v:3215]
-WARNING: [Synth 8-7071] port 'clkdiv_out' of module 'ila_v6_2_18_ila' is unconnected for instance 'inst' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/synth/design_1_ila_0_0.v:3215]
-WARNING: [Synth 8-7071] port 'trig_in' of module 'ila_v6_2_18_ila' is unconnected for instance 'inst' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/synth/design_1_ila_0_0.v:3215]
-WARNING: [Synth 8-7071] port 'trig_in_ack' of module 'ila_v6_2_18_ila' is unconnected for instance 'inst' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/synth/design_1_ila_0_0.v:3215]
-WARNING: [Synth 8-7071] port 'trig_out' of module 'ila_v6_2_18_ila' is unconnected for instance 'inst' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/synth/design_1_ila_0_0.v:3215]
-WARNING: [Synth 8-7071] port 'trig_out_ack' of module 'ila_v6_2_18_ila' is unconnected for instance 'inst' [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/synth/design_1_ila_0_0.v:3215]
-WARNING: [Synth 8-7023] instance 'inst' of module 'ila_v6_2_18_ila' has 1033 connections declared, but only 1027 given [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/synth/design_1_ila_0_0.v:3215]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_ila_0_0' (0#1) [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/synth/design_1_ila_0_0.v:48]
-WARNING: [Synth 8-3848] Net sl_iport0 in module/entity design_1_ila_0_0 does not have driver. [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/synth/design_1_ila_0_0.v:104]
+WARNING: [Synth 8-7071] port 'clk_nobuf' of module 'ila_v6_2_18_ila' is unconnected for instance 'inst' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/synth/design_1_ila_0_0.v:3217]
+WARNING: [Synth 8-7071] port 'clkdiv_out' of module 'ila_v6_2_18_ila' is unconnected for instance 'inst' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/synth/design_1_ila_0_0.v:3217]
+WARNING: [Synth 8-7071] port 'trig_in' of module 'ila_v6_2_18_ila' is unconnected for instance 'inst' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/synth/design_1_ila_0_0.v:3217]
+WARNING: [Synth 8-7071] port 'trig_in_ack' of module 'ila_v6_2_18_ila' is unconnected for instance 'inst' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/synth/design_1_ila_0_0.v:3217]
+WARNING: [Synth 8-7071] port 'trig_out' of module 'ila_v6_2_18_ila' is unconnected for instance 'inst' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/synth/design_1_ila_0_0.v:3217]
+WARNING: [Synth 8-7071] port 'trig_out_ack' of module 'ila_v6_2_18_ila' is unconnected for instance 'inst' [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/synth/design_1_ila_0_0.v:3217]
+WARNING: [Synth 8-7023] instance 'inst' of module 'ila_v6_2_18_ila' has 1033 connections declared, but only 1027 given [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/synth/design_1_ila_0_0.v:3217]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ila_0_0' (0#1) [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/synth/design_1_ila_0_0.v:48]
+WARNING: [Synth 8-3848] Net sl_iport0 in module/entity design_1_ila_0_0 does not have driver. [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/synth/design_1_ila_0_0.v:106]
 WARNING: [Synth 8-7129] Port CLKB in module blk_mem_gen_v8_4_11_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[35] in module blk_mem_gen_v8_4_11_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[34] in module blk_mem_gen_v8_4_11_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[33] in module blk_mem_gen_v8_4_11_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[32] in module blk_mem_gen_v8_4_11_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[31] in module blk_mem_gen_v8_4_11_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[30] in module blk_mem_gen_v8_4_11_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[29] in module blk_mem_gen_v8_4_11_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[28] in module blk_mem_gen_v8_4_11_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[27] in module blk_mem_gen_v8_4_11_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[26] in module blk_mem_gen_v8_4_11_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[25] in module blk_mem_gen_v8_4_11_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[24] in module blk_mem_gen_v8_4_11_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[23] in module blk_mem_gen_v8_4_11_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[22] in module blk_mem_gen_v8_4_11_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[21] in module blk_mem_gen_v8_4_11_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[20] in module blk_mem_gen_v8_4_11_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[19] in module blk_mem_gen_v8_4_11_blk_mem_output_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA_I[18] in module blk_mem_gen_v8_4_11_blk_mem_output_block is either unconnected or has no load
 WARNING: [Synth 8-7129] Port DOUTA_I[17] in module blk_mem_gen_v8_4_11_blk_mem_output_block is either unconnected or has no load
 WARNING: [Synth 8-7129] Port DOUTA_I[16] in module blk_mem_gen_v8_4_11_blk_mem_output_block is either unconnected or has no load
 WARNING: [Synth 8-7129] Port DOUTA_I[15] in module blk_mem_gen_v8_4_11_blk_mem_output_block is either unconnected or has no load
@@ -177,8 +196,6 @@ WARNING: [Synth 8-7129] Port DOUTA_I[1] in module blk_mem_gen_v8_4_11_blk_mem_ou
 WARNING: [Synth 8-7129] Port DOUTA_I[0] in module blk_mem_gen_v8_4_11_blk_mem_output_block is either unconnected or has no load
 WARNING: [Synth 8-7129] Port SBITERR_I in module blk_mem_gen_v8_4_11_blk_mem_output_block is either unconnected or has no load
 WARNING: [Synth 8-7129] Port DBITERR_I in module blk_mem_gen_v8_4_11_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port RDADDRECC_I[11] in module blk_mem_gen_v8_4_11_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port RDADDRECC_I[10] in module blk_mem_gen_v8_4_11_blk_mem_output_block is either unconnected or has no load
 WARNING: [Synth 8-7129] Port RDADDRECC_I[9] in module blk_mem_gen_v8_4_11_blk_mem_output_block is either unconnected or has no load
 WARNING: [Synth 8-7129] Port RDADDRECC_I[8] in module blk_mem_gen_v8_4_11_blk_mem_output_block is either unconnected or has no load
 WARNING: [Synth 8-7129] Port RDADDRECC_I[7] in module blk_mem_gen_v8_4_11_blk_mem_output_block is either unconnected or has no load
@@ -189,34 +206,33 @@ WARNING: [Synth 8-7129] Port RDADDRECC_I[3] in module blk_mem_gen_v8_4_11_blk_me
 WARNING: [Synth 8-7129] Port RDADDRECC_I[2] in module blk_mem_gen_v8_4_11_blk_mem_output_block is either unconnected or has no load
 WARNING: [Synth 8-7129] Port RDADDRECC_I[1] in module blk_mem_gen_v8_4_11_blk_mem_output_block is either unconnected or has no load
 WARNING: [Synth 8-7129] Port RDADDRECC_I[0] in module blk_mem_gen_v8_4_11_blk_mem_output_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA[8] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA[7] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA[6] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA[5] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA[4] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA[3] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA[2] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA[1] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DOUTA[0] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SBITERR in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DBITERR in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SSRA in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port REGCEA in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SSRB in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port WEB[0] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DINB[8] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DINB[7] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DINB[6] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DINB[5] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DINB[4] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DINB[3] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DINB[2] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DINB[1] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DINB[0] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SLEEP in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port INJECTSBITERR in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port INJECTDBITERR in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ECCPIPECE in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[35] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[34] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[33] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[32] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[31] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[30] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[29] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[28] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[27] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[26] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[25] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[24] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[23] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[22] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[21] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[20] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[19] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[18] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[17] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[16] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[15] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[14] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[13] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[12] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[11] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[10] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUTA[9] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
 WARNING: [Synth 8-7129] Port DOUTA[8] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
 WARNING: [Synth 8-7129] Port DOUTA[7] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
 WARNING: [Synth 8-7129] Port DOUTA[6] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
@@ -232,83 +248,68 @@ WARNING: [Synth 8-7129] Port SSRA in module blk_mem_gen_v8_4_11_blk_mem_gen_prim
 WARNING: [Synth 8-7129] Port REGCEA in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
 WARNING: [Synth 8-7129] Port SSRB in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
 WARNING: [Synth 8-7129] Port WEB[0] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DINB[8] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DINB[7] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DINB[6] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DINB[5] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DINB[4] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DINB[3] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DINB[2] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DINB[1] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
-WARNING: [Synth 8-7129] Port DINB[0] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SLEEP in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
-WARNING: [Synth 8-7129] Port INJECTSBITERR in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
-WARNING: [Synth 8-7129] Port INJECTDBITERR in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ECCPIPECE in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
-WARNING: [Synth 8-7129] Port RSTA[0] in module blk_mem_gen_v8_4_11_blk_mem_gen_generic_cstr is either unconnected or has no load
-WARNING: [Synth 8-7129] Port WEA[1] in module blk_mem_gen_v8_4_11_blk_mem_gen_generic_cstr is either unconnected or has no load
-WARNING: [Synth 8-7129] Port RSTB[0] in module blk_mem_gen_v8_4_11_blk_mem_gen_generic_cstr is either unconnected or has no load
-WARNING: [Synth 8-7129] Port WEB[1] in module blk_mem_gen_v8_4_11_blk_mem_gen_generic_cstr is either unconnected or has no load
-WARNING: [Synth 8-7129] Port INJECTSBITERR in module blk_mem_gen_v8_4_11_blk_mem_gen_generic_cstr is either unconnected or has no load
-WARNING: [Synth 8-7129] Port INJECTDBITERR in module blk_mem_gen_v8_4_11_blk_mem_gen_generic_cstr is either unconnected or has no load
-WARNING: [Synth 8-7129] Port RSTA in module blk_mem_gen_v8_4_11_blk_mem_input_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ENA in module blk_mem_gen_v8_4_11_blk_mem_input_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port REGCEA in module blk_mem_gen_v8_4_11_blk_mem_input_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port RSTB in module blk_mem_gen_v8_4_11_blk_mem_input_block is either unconnected or has no load
-WARNING: [Synth 8-7129] Port REGCEB in module blk_mem_gen_v8_4_11_blk_mem_input_block is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[35] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[34] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[33] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[32] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[31] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[30] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[29] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[28] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DINB[27] in module blk_mem_gen_v8_4_11_blk_mem_gen_prim_wrapper is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1812.027 ; gain = 1035.637
+Finished RTL Elaboration : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 1813.961 ; gain = 1037.422
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1812.027 ; gain = 1035.637
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 1813.961 ; gain = 1037.422
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1812.027 ; gain = 1035.637
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 1813.961 ; gain = 1037.422
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1812.027 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.081 . Memory (MB): peak = 1813.961 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 39 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/design_1_ila_0_0_ooc.xdc] for cell 'inst'
-Finished Parsing XDC File [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/design_1_ila_0_0_ooc.xdc] for cell 'inst'
-Parsing XDC File [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/ila_v6_2/constraints/ila.xdc] for cell 'inst'
-Finished Parsing XDC File [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/ila_v6_2/constraints/ila.xdc] for cell 'inst'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/ila_v6_2/constraints/ila.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_ila_0_0_propImpl.xdc].
+Parsing XDC File [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/design_1_ila_0_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/design_1_ila_0_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/ila_v6_2/constraints/ila.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/ila_v6_2/constraints/ila.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/ila_v6_2/constraints/ila.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_ila_0_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_ila_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [C:/01_FPGA_Workspace/ethernet_main/ethernet_main.runs/design_1_ila_0_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/01_FPGA_Workspace/ethernet_main/ethernet_main.runs/design_1_ila_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [C:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.runs/design_1_ila_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.runs/design_1_ila_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1812.027 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1813.961 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 28 instances were transformed.
   CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 24 instances
   CFGLUT5 => SRLC32E: 4 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 1812.027 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.064 . Memory (MB): peak = 1813.961 ; gain = 0.000
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1812.027 ; gain = 1035.637
+Finished Constraint Validation : Time (s): cpu = 00:00:44 ; elapsed = 00:00:51 . Memory (MB): peak = 1813.961 ; gain = 1037.422
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a200tfbg484-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1812.027 ; gain = 1035.637
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:44 ; elapsed = 00:00:51 . Memory (MB): peak = 1813.961 ; gain = 1037.422
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1812.027 ; gain = 1035.637
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:51 . Memory (MB): peak = 1813.961 ; gain = 1037.422
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s'
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized0'
@@ -347,7 +348,7 @@ INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in m
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'ltlib_v1_0_3_generic_memrd'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1812.027 ; gain = 1035.637
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:45 ; elapsed = 00:00:52 . Memory (MB): peak = 1813.961 ; gain = 1037.422
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -369,25 +370,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1812.027 ; gain = 1035.637
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:01:03 . Memory (MB): peak = 1813.961 ; gain = 1037.422
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 1812.027 ; gain = 1035.637
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:04 ; elapsed = 00:01:13 . Memory (MB): peak = 1813.961 ; gain = 1037.422
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 1812.027 ; gain = 1035.637
+Finished Timing Optimization : Time (s): cpu = 00:01:04 ; elapsed = 00:01:13 . Memory (MB): peak = 1813.961 ; gain = 1037.422
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1812.027 ; gain = 1035.637
+Finished Technology Mapping : Time (s): cpu = 00:01:05 ; elapsed = 00:01:14 . Memory (MB): peak = 1813.961 ; gain = 1037.422
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -445,37 +446,37 @@ INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[0] to constant 0
 INFO: [Synth 8-3295] tying undriven pin inst:trig_in to constant 0
 INFO: [Synth 8-3295] tying undriven pin inst:trig_out_ack to constant 0
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1898.254 ; gain = 1121.863
+Finished IO Insertion : Time (s): cpu = 00:01:10 ; elapsed = 00:01:19 . Memory (MB): peak = 1909.836 ; gain = 1133.297
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1898.254 ; gain = 1121.863
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:10 ; elapsed = 00:01:19 . Memory (MB): peak = 1909.836 ; gain = 1133.297
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1898.254 ; gain = 1121.863
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:10 ; elapsed = 00:01:20 . Memory (MB): peak = 1909.836 ; gain = 1133.297
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1898.254 ; gain = 1121.863
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:10 ; elapsed = 00:01:20 . Memory (MB): peak = 1909.836 ; gain = 1133.297
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1898.254 ; gain = 1121.863
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:10 ; elapsed = 00:01:20 . Memory (MB): peak = 1909.836 ; gain = 1133.297
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1898.254 ; gain = 1121.863
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:10 ; elapsed = 00:01:20 . Memory (MB): peak = 1909.836 ; gain = 1133.297
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -491,50 +492,50 @@ Report Cell Usage:
 +------+---------+------+
 |      |Cell     |Count |
 +------+---------+------+
-|1     |CARRY4   |    19|
+|1     |CARRY4   |    10|
 |2     |CFGLUT5  |    28|
-|3     |LUT1     |    27|
-|4     |LUT2     |    42|
-|5     |LUT3     |    66|
-|6     |LUT4     |    65|
-|7     |LUT5     |    88|
-|8     |LUT6     |   294|
+|3     |LUT1     |    26|
+|4     |LUT2     |    37|
+|5     |LUT3     |    65|
+|6     |LUT4     |    72|
+|7     |LUT5     |   105|
+|8     |LUT6     |   302|
 |9     |MUXF7    |     2|
-|10    |RAMB36E1 |     2|
-|11    |SRL16E   |    21|
+|10    |RAMB36E1 |     1|
+|11    |SRL16E   |    39|
 |12    |SRLC16E  |     2|
 |13    |SRLC32E  |    17|
-|14    |FDRE     |  1064|
+|14    |FDRE     |  1100|
 |15    |FDSE     |    10|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1898.254 ; gain = 1121.863
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:10 ; elapsed = 00:01:20 . Memory (MB): peak = 1909.836 ; gain = 1133.297
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 2520 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:40 . Memory (MB): peak = 1898.254 ; gain = 1121.863
-Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1898.254 ; gain = 1121.863
+Synthesis finished with 0 errors, 0 critical warnings and 2604 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:01:15 . Memory (MB): peak = 1909.836 ; gain = 1133.297
+Synthesis Optimization Complete : Time (s): cpu = 00:01:10 ; elapsed = 00:01:20 . Memory (MB): peak = 1909.836 ; gain = 1133.297
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1898.254 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 51 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1909.836 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 41 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1901.703 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1915.070 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 28 instances were transformed.
   CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 24 instances
   CFGLUT5 => SRLC32E: 4 instances
 
-Synth Design complete | Checksum: a6a6d3cb
+Synth Design complete | Checksum: 5986d552
 INFO: [Common 17-83] Releasing license: Synthesis
 180 Infos, 109 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 1901.703 ; gain = 1361.945
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1901.703 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/01_FPGA_Workspace/ethernet_main/ethernet_main.runs/design_1_ila_0_0_synth_1/design_1_ila_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_ila_0_0, cache-ID = 6e1011cadf6880aa
-INFO: [Coretcl 2-1174] Renamed 98 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1901.703 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/01_FPGA_Workspace/ethernet_main/ethernet_main.runs/design_1_ila_0_0_synth_1/design_1_ila_0_0.dcp' has been generated.
+synth_design: Time (s): cpu = 00:01:15 ; elapsed = 00:01:27 . Memory (MB): peak = 1915.070 ; gain = 1376.645
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1915.070 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.runs/design_1_ila_0_0_synth_1/design_1_ila_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_ila_0_0, cache-ID = ab82f4d059728498
+INFO: [Coretcl 2-1174] Renamed 96 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1915.070 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.runs/design_1_ila_0_0_synth_1/design_1_ila_0_0.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_ila_0_0_utilization_synth.rpt -pb design_1_ila_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Oct  3 22:03:13 2026...
+INFO: [Common 17-206] Exiting Vivado at Tue Oct  6 01:22:39 2026...

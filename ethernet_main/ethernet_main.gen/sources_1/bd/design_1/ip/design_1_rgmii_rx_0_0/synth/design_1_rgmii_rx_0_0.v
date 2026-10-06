@@ -60,8 +60,6 @@ module design_1_rgmii_rx_0_0 (
   i_eth_data,
   i_eth_ctl,
   o_eth_reset,
-  o_low_nibble,
-  o_high_nibble,
   o_data
 );
 
@@ -75,8 +73,6 @@ input wire i_eth_ctl;
 (* X_INTERFACE_MODE = "master" *)
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME o_eth_reset, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
 output wire o_eth_reset;
-output wire [3 : 0] o_low_nibble;
-output wire [3 : 0] o_high_nibble;
 output wire [7 : 0] o_data;
 
   rgmii_rx inst (
@@ -84,8 +80,6 @@ output wire [7 : 0] o_data;
     .i_eth_data(i_eth_data),
     .i_eth_ctl(i_eth_ctl),
     .o_eth_reset(o_eth_reset),
-    .o_low_nibble(o_low_nibble),
-    .o_high_nibble(o_high_nibble),
     .o_data(o_data)
   );
 endmodule

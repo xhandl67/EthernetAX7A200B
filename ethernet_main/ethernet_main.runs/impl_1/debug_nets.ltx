@@ -72,28 +72,14 @@
                                 "id": 1,
                                 "type": "DATA",
                                 "direction": "IN",
-                                "isVector": true,
+                                "isVector": false,
                                 "leftIndex": 0,
-                                "rightIndex": 3,
+                                "rightIndex": 0,
                                 "portIndex": 1,
                                 "nets": [
                                     {
-                                        "name": "design_1_i/rgmii_rx_0_o_low_nibble",
-                                        "isBus": true,
-                                        "subnets": [
-                                            {
-                                                "name": "design_1_i/rgmii_rx_0_o_low_nibble[3]"
-                                            },
-                                            {
-                                                "name": "design_1_i/rgmii_rx_0_o_low_nibble[2]"
-                                            },
-                                            {
-                                                "name": "design_1_i/rgmii_rx_0_o_low_nibble[1]"
-                                            },
-                                            {
-                                                "name": "design_1_i/rgmii_rx_0_o_low_nibble[0]"
-                                            }
-                                        ]
+                                        "name": "design_1_i/i_eth_ctl",
+                                        "isBus": false
                                     }
                                 ]
                             },
@@ -104,24 +90,20 @@
                                 "direction": "IN",
                                 "isVector": true,
                                 "leftIndex": 0,
-                                "rightIndex": 3,
+                                "rightIndex": 1,
                                 "portIndex": 2,
                                 "nets": [
                                     {
-                                        "name": "design_1_i/rgmii_rx_0_o_high_nibble",
+                                        "name": "design_1_i/statemachine_test_0_state",
                                         "isBus": true,
                                         "subnets": [
                                             {
-                                                "name": "design_1_i/rgmii_rx_0_o_high_nibble[3]"
+                                                "name": "design_1_i/statemachine_test_0_state[1]",
+                                                "parentNetId": 9
                                             },
                                             {
-                                                "name": "design_1_i/rgmii_rx_0_o_high_nibble[2]"
-                                            },
-                                            {
-                                                "name": "design_1_i/rgmii_rx_0_o_high_nibble[1]"
-                                            },
-                                            {
-                                                "name": "design_1_i/rgmii_rx_0_o_high_nibble[0]"
+                                                "name": "design_1_i/statemachine_test_0_state[0]",
+                                                "parentNetId": 10
                                             }
                                         ]
                                     }
@@ -132,14 +114,154 @@
                                 "id": 3,
                                 "type": "DATA",
                                 "direction": "IN",
-                                "isVector": false,
+                                "isVector": true,
                                 "leftIndex": 0,
-                                "rightIndex": 0,
+                                "rightIndex": 7,
                                 "portIndex": 3,
                                 "nets": [
                                     {
-                                        "name": "design_1_i/i_eth_ctl",
-                                        "isBus": false
+                                        "name": "design_1_i/ethernet_state_machi_0_o_data_byte",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "design_1_i/ethernet_state_machi_0_o_data_byte[7]"
+                                            },
+                                            {
+                                                "name": "design_1_i/ethernet_state_machi_0_o_data_byte[6]"
+                                            },
+                                            {
+                                                "name": "design_1_i/ethernet_state_machi_0_o_data_byte[5]"
+                                            },
+                                            {
+                                                "name": "design_1_i/ethernet_state_machi_0_o_data_byte[4]"
+                                            },
+                                            {
+                                                "name": "design_1_i/ethernet_state_machi_0_o_data_byte[3]"
+                                            },
+                                            {
+                                                "name": "design_1_i/ethernet_state_machi_0_o_data_byte[2]"
+                                            },
+                                            {
+                                                "name": "design_1_i/ethernet_state_machi_0_o_data_byte[1]"
+                                            },
+                                            {
+                                                "name": "design_1_i/ethernet_state_machi_0_o_data_byte[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe4",
+                                "id": 4,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 15,
+                                "portIndex": 4,
+                                "nets": [
+                                    {
+                                        "name": "design_1_i/ethernet_state_machi_0_o_debug_len",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "design_1_i/ethernet_state_machi_0_o_debug_len[15]"
+                                            },
+                                            {
+                                                "name": "design_1_i/ethernet_state_machi_0_o_debug_len[14]"
+                                            },
+                                            {
+                                                "name": "design_1_i/ethernet_state_machi_0_o_debug_len[13]"
+                                            },
+                                            {
+                                                "name": "design_1_i/ethernet_state_machi_0_o_debug_len[12]"
+                                            },
+                                            {
+                                                "name": "design_1_i/ethernet_state_machi_0_o_debug_len[11]"
+                                            },
+                                            {
+                                                "name": "design_1_i/ethernet_state_machi_0_o_debug_len[10]"
+                                            },
+                                            {
+                                                "name": "design_1_i/ethernet_state_machi_0_o_debug_len[9]"
+                                            },
+                                            {
+                                                "name": "design_1_i/ethernet_state_machi_0_o_debug_len[8]"
+                                            },
+                                            {
+                                                "name": "design_1_i/ethernet_state_machi_0_o_debug_len[7]"
+                                            },
+                                            {
+                                                "name": "design_1_i/ethernet_state_machi_0_o_debug_len[6]"
+                                            },
+                                            {
+                                                "name": "design_1_i/ethernet_state_machi_0_o_debug_len[5]"
+                                            },
+                                            {
+                                                "name": "design_1_i/ethernet_state_machi_0_o_debug_len[4]"
+                                            },
+                                            {
+                                                "name": "design_1_i/ethernet_state_machi_0_o_debug_len[3]"
+                                            },
+                                            {
+                                                "name": "design_1_i/ethernet_state_machi_0_o_debug_len[2]"
+                                            },
+                                            {
+                                                "name": "design_1_i/ethernet_state_machi_0_o_debug_len[1]"
+                                            },
+                                            {
+                                                "name": "design_1_i/ethernet_state_machi_0_o_debug_len[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "parent_nets": [
+                    {
+                        "id": 9,
+                        "name": "design_1_i/statemachine_test_0/inst/FSM_onehot_r_state_reg[2]_0",
+                        "state_reg": [
+                            {
+                                "name": "design_1_i/statemachine_test_0/inst/FSM_onehot_r_state_reg[2]",
+                                "states": [
+                                    {
+                                        "name": "SFD",
+                                        "val": "010"
+                                    },
+                                    {
+                                        "name": "IDLE",
+                                        "val": "001"
+                                    },
+                                    {
+                                        "name": "SFD_CORRECT",
+                                        "val": "100"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 10,
+                        "name": "design_1_i/statemachine_test_0/inst/FSM_onehot_r_state_reg[1]_0",
+                        "state_reg": [
+                            {
+                                "name": "design_1_i/statemachine_test_0/inst/FSM_onehot_r_state_reg[1]",
+                                "states": [
+                                    {
+                                        "name": "SFD",
+                                        "val": "010"
+                                    },
+                                    {
+                                        "name": "IDLE",
+                                        "val": "001"
+                                    },
+                                    {
+                                        "name": "SFD_CORRECT",
+                                        "val": "100"
                                     }
                                 ]
                             }

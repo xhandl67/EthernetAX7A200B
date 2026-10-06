@@ -3,12 +3,12 @@
 # SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Sat Oct  3 22:02:18 2026
-# Process ID         : 35456
-# Current directory  : C:/01_FPGA_Workspace/ethernet_main/ethernet_main.runs/design_1_ila_0_0_synth_1
+# Start of session at: Tue Oct  6 01:20:56 2026
+# Process ID         : 29816
+# Current directory  : C:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.runs/design_1_ila_0_0_synth_1
 # Command line       : vivado.exe -log design_1_ila_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_ila_0_0.tcl
-# Log file           : C:/01_FPGA_Workspace/ethernet_main/ethernet_main.runs/design_1_ila_0_0_synth_1/design_1_ila_0_0.vds
-# Journal file       : C:/01_FPGA_Workspace/ethernet_main/ethernet_main.runs/design_1_ila_0_0_synth_1\vivado.jou
+# Log file           : C:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.runs/design_1_ila_0_0_synth_1/design_1_ila_0_0.vds
+# Journal file       : C:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.runs/design_1_ila_0_0_synth_1\vivado.jou
 # Running On         : killcrafterHD
 # Platform           : Windows Server 2016 or Windows 10
 # Operating System   : 26200
@@ -17,8 +17,8 @@
 # CPU Physical cores : 12
 # CPU Logical cores  : 20
 # Host memory        : 34122 MB
-# Swap memory        : 2550 MB
-# Total Virtual      : 36672 MB
-# Available Virtual  : 7237 MB
+# Swap memory        : 9475 MB
+# Total Virtual      : 43598 MB
+# Available Virtual  : 4618 MB
 #-----------------------------------------------------------
 source design_1_ila_0_0.tcl -notrace

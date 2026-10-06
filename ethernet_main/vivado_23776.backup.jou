@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Sun Oct  4 21:07:59 2026
+# Process ID         : 23776
+# Current directory  : C:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent21348 C:\01_FPGA_Workspace\EthernetAX7A200B\ethernet_main\ethernet_main.xpr
+# Log file           : C:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/vivado.log
+# Journal file       : C:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main\vivado.jou
+# Running On         : killcrafterHD
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i7-12700K
+# CPU Frequency      : 3610 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 20
+# Host memory        : 34122 MB
+# Swap memory        : 2550 MB
+# Total Virtual      : 36672 MB
+# Available Virtual  : 25405 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.xpr
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a200t_0]
+set_property PROBES.FILE {C:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {C:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7a200t_0]
+current_hw_device [get_hw_devices xc7a200t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+set_property PROBES.FILE {C:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {C:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {C:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]

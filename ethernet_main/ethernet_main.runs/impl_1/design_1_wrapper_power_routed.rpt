@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
-| Date             : Sat Oct  3 22:21:19 2026
+| Date             : Tue Oct  6 01:26:19 2026
 | Host             : killcrafterHD running 64-bit major release  (build 9200)
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -53,16 +53,16 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.010 |        4 |       --- |             --- |
-| Slice Logic              |    <0.001 |     3209 |       --- |             --- |
-|   LUT as Logic           |    <0.001 |      922 |    133800 |            0.69 |
-|   Register               |    <0.001 |     1749 |    267600 |            0.65 |
-|   CARRY4                 |    <0.001 |       31 |     33450 |            0.09 |
-|   LUT as Shift Register  |    <0.001 |       60 |     46200 |            0.13 |
+| Slice Logic              |     0.001 |     3457 |       --- |             --- |
+|   LUT as Logic           |     0.001 |     1032 |    133800 |            0.77 |
+|   Register               |    <0.001 |     1835 |    267600 |            0.69 |
+|   CARRY4                 |    <0.001 |       38 |     33450 |            0.11 |
+|   LUT as Shift Register  |    <0.001 |       70 |     46200 |            0.15 |
 |   LUT as Distributed RAM |    <0.001 |       24 |     46200 |            0.05 |
 |   F7/F8 Muxes            |    <0.001 |        2 |    133800 |           <0.01 |
-|   Others                 |     0.000 |      200 |       --- |             --- |
-| Signals                  |     0.001 |     2438 |       --- |             --- |
-| Block RAM                |     0.003 |        2 |       365 |            0.55 |
+|   Others                 |     0.000 |      197 |       --- |             --- |
+| Signals                  |     0.002 |     2640 |       --- |             --- |
+| Block RAM                |     0.001 |        1 |       365 |            0.27 |
 | I/O                      |    <0.001 |        7 |       285 |            2.46 |
 | Static Power             |     0.122 |          |           |                 |
 | Total                    |     0.137 |          |           |                 |
@@ -142,16 +142,18 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+--------------------------+-----------+
-| Name                     | Power (W) |
-+--------------------------+-----------+
-| design_1_wrapper         |     0.015 |
-|   dbg_hub                |     0.004 |
-|     inst                 |     0.004 |
-|       BSCANID.u_xsdbm_id |     0.004 |
-|   design_1_i             |     0.011 |
-|     ila_0                |     0.011 |
-|       inst               |     0.011 |
-+--------------------------+-----------+
++----------------------------+-----------+
+| Name                       | Power (W) |
++----------------------------+-----------+
+| design_1_wrapper           |     0.015 |
+|   dbg_hub                  |     0.003 |
+|     inst                   |     0.003 |
+|       BSCANID.u_xsdbm_id   |     0.003 |
+|   design_1_i               |     0.011 |
+|     ethernet_state_machi_0 |     0.001 |
+|       inst                 |     0.001 |
+|     ila_0                  |     0.010 |
+|       inst                 |     0.010 |
++----------------------------+-----------+
 
 

@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/01_FPGA_Workspace/ethernet_main/ethernet_main.srcs/constrs_1/new/CF.xdc rfile:../../../ethernet_main.srcs/constrs_1/new/CF.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.srcs/constrs_1/new/CF.xdc rfile:../../../ethernet_main.srcs/constrs_1/new/CF.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:10 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN P19 [get_ports {i_eth_data[0]}]
 set_property src_info {type:XDC file:1 line:11 export:INPUT save:INPUT read:READ} [current_design]

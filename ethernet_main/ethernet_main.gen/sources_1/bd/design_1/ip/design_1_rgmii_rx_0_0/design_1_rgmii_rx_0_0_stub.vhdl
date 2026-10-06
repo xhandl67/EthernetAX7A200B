@@ -2,10 +2,10 @@
 -- Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
--- Date        : Sat Oct  3 22:19:03 2026
+-- Date        : Tue Oct  6 01:08:04 2026
 -- Host        : killcrafterHD running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
---               c:/01_FPGA_Workspace/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ip/design_1_rgmii_rx_0_0/design_1_rgmii_rx_0_0_stub.vhdl
+--               c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/ip/design_1_rgmii_rx_0_0/design_1_rgmii_rx_0_0_stub.vhdl
 -- Design      : design_1_rgmii_rx_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7a200tfbg484-2
@@ -19,8 +19,6 @@ entity design_1_rgmii_rx_0_0 is
     i_eth_data : in STD_LOGIC_VECTOR ( 3 downto 0 );
     i_eth_ctl : in STD_LOGIC;
     o_eth_reset : out STD_LOGIC;
-    o_low_nibble : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    o_high_nibble : out STD_LOGIC_VECTOR ( 3 downto 0 );
     o_data : out STD_LOGIC_VECTOR ( 7 downto 0 )
   );
 
@@ -38,7 +36,7 @@ architecture stub of design_1_rgmii_rx_0_0 is
   attribute syn_black_box : boolean;
   attribute black_box_pad_pin : string;
   attribute syn_black_box of stub : architecture is true;
-  attribute black_box_pad_pin of stub : architecture is "i_eth_clk,i_eth_data[3:0],i_eth_ctl,o_eth_reset,o_low_nibble[3:0],o_high_nibble[3:0],o_data[7:0]";
+  attribute black_box_pad_pin of stub : architecture is "i_eth_clk,i_eth_data[3:0],i_eth_ctl,o_eth_reset,o_data[7:0]";
   attribute X_INTERFACE_INFO : string;
   attribute X_INTERFACE_INFO of i_eth_clk : signal is "xilinx.com:signal:clock:1.0 i_eth_clk CLK";
   attribute X_INTERFACE_MODE : string;

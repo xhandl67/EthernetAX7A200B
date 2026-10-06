@@ -6,8 +6,6 @@ module rgmii_rx(
     input i_eth_ctl,
     
     output o_eth_reset,
-    output [3:0] o_low_nibble,
-    output [3:0] o_high_nibble,
     output [7:0] o_data
     );
     
@@ -18,13 +16,13 @@ module rgmii_rx(
         for (i = 0; i < 4; i = i + 1) begin : gen_iddr
 
             IDDR #(
-                .DDR_CLK_EDGE("OPPOSITE_EDGE"),
+                .DDR_CLK_EDGE("SAME_EDGE"),
                 .INIT_Q1(1'b0),
                 .INIT_Q2(1'b0),
                 .SRTYPE("SYNC")
             ) IDDR_inst (
-                .Q1(o_low_nibble[i]),
-                .Q2(o_high_nibble[i]),
+                .Q1(o_data[i+4]),
+                .Q2(o_data[i]),
                 .C(i_eth_clk),
                 .CE(1'b1),
                 .D(i_eth_data[i]),
@@ -34,10 +32,6 @@ module rgmii_rx(
 
         end
     endgenerate
-    
-    always @(posedge i_eth_clk)begin
-        r_data_reg <= {o_low_nibble,o_high_nibble};
-    end 
+
     assign o_eth_reset = 1'b1;
-    assign o_data = r_data_reg;
 endmodule

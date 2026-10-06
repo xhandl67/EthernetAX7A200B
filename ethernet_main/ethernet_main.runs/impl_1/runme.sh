@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/01_FPGA_Workspace/ethernet_main/ethernet_main.runs/impl_1'
+HD_PWD='C:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

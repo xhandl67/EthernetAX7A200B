@@ -12,7 +12,9 @@
     },
     "design_tree": {
       "rgmii_rx_0": "",
-      "ila_0": ""
+      "ila_0": "",
+      "statemachine_test_0": "",
+      "ethernet_state_machi_0": ""
     },
     "ports": {
       "i_eth_data": {
@@ -110,6 +112,10 @@
           "i_eth_ctl": {
             "direction": "I",
             "parameters": {
+              "CLK_DOMAIN": {
+                "value": "design_1_i_eth_clk_0",
+                "value_src": "default_prop"
+              },
               "FREQ_HZ": {
                 "value": "100000000",
                 "value_src": "default_prop"
@@ -117,26 +123,12 @@
               "PHASE": {
                 "value": "0.0",
                 "value_src": "default_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "design_1_i_eth_clk_0",
-                "value_src": "default_prop"
               }
             }
           },
           "o_eth_reset": {
             "type": "rst",
             "direction": "O"
-          },
-          "o_low_nibble": {
-            "direction": "O",
-            "left": "3",
-            "right": "0"
-          },
-          "o_high_nibble": {
-            "direction": "O",
-            "left": "3",
-            "right": "0"
           },
           "o_data": {
             "direction": "O",
@@ -154,13 +146,13 @@
         "has_run_ip_tcl": "true",
         "parameters": {
           "C_DATA_DEPTH": {
-            "value": "4096"
+            "value": "1024"
           },
           "C_MONITOR_TYPE": {
             "value": "Native"
           },
           "C_NUM_OF_PROBES": {
-            "value": "4"
+            "value": "5"
           },
           "C_PROBE0_TYPE": {
             "value": "1"
@@ -172,16 +164,106 @@
             "value": "1"
           },
           "C_PROBE1_WIDTH": {
-            "value": "4"
+            "value": "1"
           },
           "C_PROBE2_TYPE": {
             "value": "1"
           },
           "C_PROBE2_WIDTH": {
-            "value": "4"
+            "value": "2"
           },
           "C_PROBE3_TYPE": {
             "value": "1"
+          },
+          "C_PROBE3_WIDTH": {
+            "value": "8"
+          },
+          "C_PROBE4_TYPE": {
+            "value": "1"
+          },
+          "C_PROBE4_WIDTH": {
+            "value": "16"
+          },
+          "C_PROBE5_TYPE": {
+            "value": "1"
+          },
+          "C_PROBE5_WIDTH": {
+            "value": "1"
+          }
+        }
+      },
+      "statemachine_test_0": {
+        "vlnv": "xilinx.com:module_ref:statemachine_test:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_statemachine_test_0_0",
+        "xci_path": "ip\\design_1_statemachine_test_0_0\\design_1_statemachine_test_0_0.xci",
+        "inst_hier_path": "statemachine_test_0",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "statemachine_test",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "i_eth_clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "design_1_i_eth_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "i_data_byte": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "state": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          }
+        }
+      },
+      "ethernet_state_machi_0": {
+        "vlnv": "xilinx.com:module_ref:ethernet_state_machine:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_ethernet_state_machi_0_0",
+        "xci_path": "ip\\design_1_ethernet_state_machi_0_0\\design_1_ethernet_state_machi_0_0.xci",
+        "inst_hier_path": "ethernet_state_machi_0",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "ethernet_state_machine",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "i_eth_clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "design_1_i_eth_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "i_data_byte": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "o_data_byte": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "o_debug_len": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
           }
         }
       }
@@ -190,15 +272,29 @@
       "Net": {
         "ports": [
           "i_eth_ctl",
-          "ila_0/probe3",
+          "ila_0/probe1",
           "rgmii_rx_0/i_eth_ctl"
+        ]
+      },
+      "ethernet_state_machi_0_o_data_byte": {
+        "ports": [
+          "ethernet_state_machi_0/o_data_byte",
+          "ila_0/probe3"
+        ]
+      },
+      "ethernet_state_machi_0_o_debug_len": {
+        "ports": [
+          "ethernet_state_machi_0/o_debug_len",
+          "ila_0/probe4"
         ]
       },
       "i_eth_clk": {
         "ports": [
           "i_eth_clk",
           "ila_0/clk",
-          "rgmii_rx_0/i_eth_clk"
+          "statemachine_test_0/i_eth_clk",
+          "rgmii_rx_0/i_eth_clk",
+          "ethernet_state_machi_0/i_eth_clk"
         ]
       },
       "i_eth_data_0_1": {
@@ -210,7 +306,9 @@
       "rgmii_rx_0_o_data": {
         "ports": [
           "rgmii_rx_0/o_data",
-          "ila_0/probe0"
+          "ila_0/probe0",
+          "statemachine_test_0/i_data_byte",
+          "ethernet_state_machi_0/i_data_byte"
         ]
       },
       "rgmii_rx_0_o_eth_reset": {
@@ -219,16 +317,10 @@
           "o_eth_reset"
         ]
       },
-      "rgmii_rx_0_o_high_nibble": {
+      "statemachine_test_0_state": {
         "ports": [
-          "rgmii_rx_0/o_high_nibble",
+          "statemachine_test_0/state",
           "ila_0/probe2"
-        ]
-      },
-      "rgmii_rx_0_o_low_nibble": {
-        "ports": [
-          "rgmii_rx_0/o_low_nibble",
-          "ila_0/probe1"
         ]
       }
     }

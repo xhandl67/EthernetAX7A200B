@@ -3,21 +3,21 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="C:/01_FPGA_Workspace/ethernet_main/ethernet_main.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+      <db_ref path="C:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
          <top_modules>
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0"></ZoomStartTime>
-      <ZoomEndTime time="15"></ZoomEndTime>
-      <Cursor1Time time="644"></Cursor1Time>
+      <ZoomStartTime time="79"></ZoomStartTime>
+      <ZoomEndTime time="94"></ZoomEndTime>
+      <Cursor1Time time="81"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="171"></NameColumnWidth>
-      <ValueColumnWidth column_width="282"></ValueColumnWidth>
+      <ValueColumnWidth column_width="270"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="5" />
+   <WVObjectSize size="7" />
    <wave_markers>
       <marker time="0" label="" />
       <marker time="490" label="" />
@@ -26,22 +26,6 @@
       <obj_property name="DisplayName">FullPathName</obj_property>
       <obj_property name="ElementShortName">design_1_i/i_eth_ctl</obj_property>
       <obj_property name="ObjectShortName">i_eth_ctl</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject fp_name="design_1_i/rgmii_rx_0_o_high_nibble" type="array">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">design_1_i/rgmii_rx_0_o_high_nibble[3:0]</obj_property>
-      <obj_property name="ObjectShortName">rgmii_rx_0_o_high_nibble[3:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
-      <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-   </wvobject>
-   <wvobject fp_name="design_1_i/rgmii_rx_0_o_low_nibble" type="array">
-      <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">design_1_i/rgmii_rx_0_o_low_nibble[3:0]</obj_property>
-      <obj_property name="ObjectShortName">rgmii_rx_0_o_low_nibble[3:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
@@ -59,5 +43,34 @@
       <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/statemachine_test_0_state" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/statemachine_test_0_state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">statemachine_test_0_state[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/ethernet_state_machi_0_o_data_byte" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/ethernet_state_machi_0_o_data_byte[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ethernet_state_machi_0_o_data_byte[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/ethernet_state_machi_0_o_debug_len" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/ethernet_state_machi_0_o_debug_len[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ethernet_state_machi_0_o_debug_len[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/ethernet_state_machi_0_o_data_byte" type="array">
+      <obj_property name="ElementShortName">design_1_i/ethernet_state_machi_0_o_data_byte[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ethernet_state_machi_0_o_data_byte[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
 </wave_config>
