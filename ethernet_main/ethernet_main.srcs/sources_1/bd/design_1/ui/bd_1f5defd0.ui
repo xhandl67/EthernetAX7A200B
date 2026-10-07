@@ -1,28 +1,30 @@
 {
    "ActiveEmotionalView":"Default View",
    "Default View_ScaleFactor":"1.0",
-   "Default View_TopLeft":"-497,-309",
+   "Default View_TopLeft":"-492,-243",
    "ExpandedHierarchyInLayout":"",
-   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0 threadsafe
 #  -string -flagsOSRD
-preplace port port-id_i_eth_ctl -pg 1 -lvl 0 -x 0 -y 270 -defaultsOSRD
-preplace port port-id_o_eth_reset -pg 1 -lvl 4 -x 890 -y 240 -defaultsOSRD
-preplace port port-id_i_eth_clk -pg 1 -lvl 0 -x 0 -y 20 -defaultsOSRD
-preplace portBus i_eth_data -pg 1 -lvl 0 -x 0 -y 250 -defaultsOSRD
-preplace inst rgmii_rx_0 -pg 1 -lvl 1 -x 180 -y 250 -defaultsOSRD
-preplace inst ila_0 -pg 1 -lvl 3 -x 780 -y 140 -defaultsOSRD
-preplace inst statemachine_test_0 -pg 1 -lvl 1 -x 180 -y 80 -defaultsOSRD
-preplace inst ethernet_state_machi_0 -pg 1 -lvl 2 -x 510 -y -20 -defaultsOSRD
-preplace netloc Net 1 0 3 30 10 340J 130 N
-preplace netloc i_eth_clk 1 0 3 20 0 350 90 N
-preplace netloc i_eth_data_0_1 1 0 1 NJ 250
-preplace netloc rgmii_rx_0_o_data 1 0 3 40 -10 330 110 N
-preplace netloc rgmii_rx_0_o_eth_reset 1 1 3 320J 250 NJ 250 870
-preplace netloc statemachine_test_0_state 1 1 2 N 80 680
-preplace netloc ethernet_state_machi_0_o_data_byte 1 2 1 690 -30n
-preplace netloc ethernet_state_machi_0_o_debug_len 1 2 1 670 -10n
-levelinfo -pg 1 0 180 510 780 890
-pagesize -pg 1 -db -bbox -sgen -160 -90 1020 380
+preplace port port-id_i_eth_ctl -pg 1 -lvl 0 -x -10 -y 320 -defaultsOSRD
+preplace port port-id_o_eth_reset -pg 1 -lvl 4 -x 910 -y 290 -defaultsOSRD
+preplace port port-id_i_eth_clk -pg 1 -lvl 0 -x -10 -y 70 -defaultsOSRD
+preplace portBus i_eth_data -pg 1 -lvl 0 -x -10 -y 300 -defaultsOSRD
+preplace inst rgmii_rx_0 -pg 1 -lvl 2 -x 510 -y 300 -defaultsOSRD
+preplace inst ila_0 -pg 1 -lvl 3 -x 800 -y 120 -defaultsOSRD
+preplace inst ethernet_pipe_stage_0 -pg 1 -lvl 1 -x 180 -y 140 -defaultsOSRD
+preplace inst udp_state_machine_0 -pg 1 -lvl 2 -x 510 -y 130 -defaultsOSRD
+preplace netloc Net 1 0 3 NJ 320 360 40 700
+preplace netloc i_eth_clk 1 0 3 10 70 350 20 710
+preplace netloc i_eth_data_0_1 1 0 2 NJ 300 NJ
+preplace netloc rgmii_rx_0_o_eth_reset 1 2 2 NJ 290 NJ
+preplace netloc udp_state_machine_0_o_udp_data 1 2 1 660 100n
+preplace netloc udp_state_machine_0_o_cnt 1 2 1 660 140n
+preplace netloc udp_state_machine_0_o_data_valid 1 2 1 710 150n
+preplace netloc udp_state_machine_0_o_state 1 2 1 680 110n
+preplace netloc rgmii_rx_0_o_data 1 0 3 20 10 NJ 10 690
+preplace netloc ethernet_pipe_stage_0_o_piped_byte 1 1 2 340 30 670
+levelinfo -pg 1 -10 180 510 800 910
+pagesize -pg 1 -db -bbox -sgen -160 -10 1040 390
 "
 }
 0

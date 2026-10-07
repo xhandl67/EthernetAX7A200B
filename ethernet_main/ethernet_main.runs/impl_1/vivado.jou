@@ -3,8 +3,8 @@
 # SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Tue Oct  6 01:23:41 2026
-# Process ID         : 20504
+# Start of session at: Wed Oct  7 02:00:56 2026
+# Process ID         : 32008
 # Current directory  : C:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.runs/impl_1
 # Command line       : vivado.exe -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
 # Log file           : C:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.runs/impl_1/design_1_wrapper.vdi
@@ -17,8 +17,8 @@
 # CPU Physical cores : 12
 # CPU Logical cores  : 20
 # Host memory        : 34122 MB
-# Swap memory        : 10555 MB
-# Total Virtual      : 44678 MB
-# Available Virtual  : 5004 MB
+# Swap memory        : 2915 MB
+# Total Virtual      : 37037 MB
+# Available Virtual  : 9545 MB
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace

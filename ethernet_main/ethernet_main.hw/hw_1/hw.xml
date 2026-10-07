@@ -54,6 +54,31 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe6[7:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/ethernet_pipe_stage_0_o_piped_byte[7]"/>
+        <net name="design_1_i/ethernet_pipe_stage_0_o_piped_byte[6]"/>
+        <net name="design_1_i/ethernet_pipe_stage_0_o_piped_byte[5]"/>
+        <net name="design_1_i/ethernet_pipe_stage_0_o_piped_byte[4]"/>
+        <net name="design_1_i/ethernet_pipe_stage_0_o_piped_byte[3]"/>
+        <net name="design_1_i/ethernet_pipe_stage_0_o_piped_byte[2]"/>
+        <net name="design_1_i/ethernet_pipe_stage_0_o_piped_byte[1]"/>
+        <net name="design_1_i/ethernet_pipe_stage_0_o_piped_byte[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila_data" busType="net" source="netlist" spec="ILA_DATA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
         <Option Id="MAP" value="probe3[7:0]"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Long"/>
@@ -71,7 +96,7 @@
         <net name="design_1_i/ethernet_state_machi_0_o_data_byte[0]"/>
       </nets>
     </probe>
-    <probe type="ila_data" busType="bus" source="netlist" spec="ILA_DATA_V2_RT">
+    <probe type="ila_data" busType="net" source="netlist" spec="ILA_DATA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="DISPLAY_AS_ENUM" value="1"/>
         <Option Id="DISPLAY_HINT" value=""/>
@@ -207,7 +232,7 @@
         <net name="design_1_i/rgmii_rx_0_o_low_nibble[0]"/>
       </nets>
     </probe>
-    <probe type="ila_data" busType="bus" source="netlist" spec="ILA_DATA_V2_RT">
+    <probe type="ila_data" busType="net" source="netlist" spec="ILA_DATA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="DISPLAY_AS_ENUM" value="1"/>
         <Option Id="DISPLAY_HINT" value=""/>
@@ -224,6 +249,104 @@
       <nets>
         <net name="design_1_i/statemachine_test_0_state[1]"/>
         <net name="design_1_i/statemachine_test_0_state[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila_data" busType="bus" source="netlist" spec="ILA_DATA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe5[15:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/udp_state_machine_0_o_cnt[15]"/>
+        <net name="design_1_i/udp_state_machine_0_o_cnt[14]"/>
+        <net name="design_1_i/udp_state_machine_0_o_cnt[13]"/>
+        <net name="design_1_i/udp_state_machine_0_o_cnt[12]"/>
+        <net name="design_1_i/udp_state_machine_0_o_cnt[11]"/>
+        <net name="design_1_i/udp_state_machine_0_o_cnt[10]"/>
+        <net name="design_1_i/udp_state_machine_0_o_cnt[9]"/>
+        <net name="design_1_i/udp_state_machine_0_o_cnt[8]"/>
+        <net name="design_1_i/udp_state_machine_0_o_cnt[7]"/>
+        <net name="design_1_i/udp_state_machine_0_o_cnt[6]"/>
+        <net name="design_1_i/udp_state_machine_0_o_cnt[5]"/>
+        <net name="design_1_i/udp_state_machine_0_o_cnt[4]"/>
+        <net name="design_1_i/udp_state_machine_0_o_cnt[3]"/>
+        <net name="design_1_i/udp_state_machine_0_o_cnt[2]"/>
+        <net name="design_1_i/udp_state_machine_0_o_cnt[1]"/>
+        <net name="design_1_i/udp_state_machine_0_o_cnt[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila_data" busType="net" source="netlist" spec="ILA_DATA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe4[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/udp_state_machine_0_o_data_valid"/>
+      </nets>
+    </probe>
+    <probe type="ila_data" busType="bus" source="netlist" spec="ILA_DATA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe2[4:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/udp_state_machine_0_o_state[4]"/>
+        <net name="design_1_i/udp_state_machine_0_o_state[3]"/>
+        <net name="design_1_i/udp_state_machine_0_o_state[2]"/>
+        <net name="design_1_i/udp_state_machine_0_o_state[1]"/>
+        <net name="design_1_i/udp_state_machine_0_o_state[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila_data" busType="bus" source="netlist" spec="ILA_DATA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe3[7:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="WAVEFORM_STYLE" value="Digital"/>
+      </probeOptions>
+      <nets>
+        <net name="design_1_i/udp_state_machine_0_o_udp_data[7]"/>
+        <net name="design_1_i/udp_state_machine_0_o_udp_data[6]"/>
+        <net name="design_1_i/udp_state_machine_0_o_udp_data[5]"/>
+        <net name="design_1_i/udp_state_machine_0_o_udp_data[4]"/>
+        <net name="design_1_i/udp_state_machine_0_o_udp_data[3]"/>
+        <net name="design_1_i/udp_state_machine_0_o_udp_data[2]"/>
+        <net name="design_1_i/udp_state_machine_0_o_udp_data[1]"/>
+        <net name="design_1_i/udp_state_machine_0_o_udp_data[0]"/>
       </nets>
     </probe>
   </probeset>

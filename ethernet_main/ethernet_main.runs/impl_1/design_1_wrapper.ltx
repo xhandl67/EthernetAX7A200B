@@ -90,20 +90,27 @@
                                 "direction": "IN",
                                 "isVector": true,
                                 "leftIndex": 0,
-                                "rightIndex": 1,
+                                "rightIndex": 4,
                                 "portIndex": 2,
                                 "nets": [
                                     {
-                                        "name": "design_1_i/statemachine_test_0_state",
+                                        "name": "design_1_i/udp_state_machine_0_o_state",
                                         "isBus": true,
                                         "subnets": [
                                             {
-                                                "name": "design_1_i/statemachine_test_0_state[1]",
-                                                "parentNetId": 9
+                                                "name": "design_1_i/udp_state_machine_0_o_state[4]"
                                             },
                                             {
-                                                "name": "design_1_i/statemachine_test_0_state[0]",
-                                                "parentNetId": 10
+                                                "name": "design_1_i/udp_state_machine_0_o_state[3]"
+                                            },
+                                            {
+                                                "name": "design_1_i/udp_state_machine_0_o_state[2]"
+                                            },
+                                            {
+                                                "name": "design_1_i/udp_state_machine_0_o_state[1]"
+                                            },
+                                            {
+                                                "name": "design_1_i/udp_state_machine_0_o_state[0]"
                                             }
                                         ]
                                     }
@@ -120,32 +127,32 @@
                                 "portIndex": 3,
                                 "nets": [
                                     {
-                                        "name": "design_1_i/ethernet_state_machi_0_o_data_byte",
+                                        "name": "design_1_i/udp_state_machine_0_o_udp_data",
                                         "isBus": true,
                                         "subnets": [
                                             {
-                                                "name": "design_1_i/ethernet_state_machi_0_o_data_byte[7]"
+                                                "name": "design_1_i/udp_state_machine_0_o_udp_data[7]"
                                             },
                                             {
-                                                "name": "design_1_i/ethernet_state_machi_0_o_data_byte[6]"
+                                                "name": "design_1_i/udp_state_machine_0_o_udp_data[6]"
                                             },
                                             {
-                                                "name": "design_1_i/ethernet_state_machi_0_o_data_byte[5]"
+                                                "name": "design_1_i/udp_state_machine_0_o_udp_data[5]"
                                             },
                                             {
-                                                "name": "design_1_i/ethernet_state_machi_0_o_data_byte[4]"
+                                                "name": "design_1_i/udp_state_machine_0_o_udp_data[4]"
                                             },
                                             {
-                                                "name": "design_1_i/ethernet_state_machi_0_o_data_byte[3]"
+                                                "name": "design_1_i/udp_state_machine_0_o_udp_data[3]"
                                             },
                                             {
-                                                "name": "design_1_i/ethernet_state_machi_0_o_data_byte[2]"
+                                                "name": "design_1_i/udp_state_machine_0_o_udp_data[2]"
                                             },
                                             {
-                                                "name": "design_1_i/ethernet_state_machi_0_o_data_byte[1]"
+                                                "name": "design_1_i/udp_state_machine_0_o_udp_data[1]"
                                             },
                                             {
-                                                "name": "design_1_i/ethernet_state_machi_0_o_data_byte[0]"
+                                                "name": "design_1_i/udp_state_machine_0_o_udp_data[0]"
                                             }
                                         ]
                                     }
@@ -156,112 +163,122 @@
                                 "id": 4,
                                 "type": "DATA",
                                 "direction": "IN",
-                                "isVector": true,
+                                "isVector": false,
                                 "leftIndex": 0,
-                                "rightIndex": 15,
+                                "rightIndex": 0,
                                 "portIndex": 4,
                                 "nets": [
                                     {
-                                        "name": "design_1_i/ethernet_state_machi_0_o_debug_len",
+                                        "name": "design_1_i/udp_state_machine_0_o_data_valid",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe5",
+                                "id": 5,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 15,
+                                "portIndex": 5,
+                                "nets": [
+                                    {
+                                        "name": "design_1_i/udp_state_machine_0_o_cnt",
                                         "isBus": true,
                                         "subnets": [
                                             {
-                                                "name": "design_1_i/ethernet_state_machi_0_o_debug_len[15]"
+                                                "name": "design_1_i/udp_state_machine_0_o_cnt[15]"
                                             },
                                             {
-                                                "name": "design_1_i/ethernet_state_machi_0_o_debug_len[14]"
+                                                "name": "design_1_i/udp_state_machine_0_o_cnt[14]"
                                             },
                                             {
-                                                "name": "design_1_i/ethernet_state_machi_0_o_debug_len[13]"
+                                                "name": "design_1_i/udp_state_machine_0_o_cnt[13]"
                                             },
                                             {
-                                                "name": "design_1_i/ethernet_state_machi_0_o_debug_len[12]"
+                                                "name": "design_1_i/udp_state_machine_0_o_cnt[12]"
                                             },
                                             {
-                                                "name": "design_1_i/ethernet_state_machi_0_o_debug_len[11]"
+                                                "name": "design_1_i/udp_state_machine_0_o_cnt[11]"
                                             },
                                             {
-                                                "name": "design_1_i/ethernet_state_machi_0_o_debug_len[10]"
+                                                "name": "design_1_i/udp_state_machine_0_o_cnt[10]"
                                             },
                                             {
-                                                "name": "design_1_i/ethernet_state_machi_0_o_debug_len[9]"
+                                                "name": "design_1_i/udp_state_machine_0_o_cnt[9]"
                                             },
                                             {
-                                                "name": "design_1_i/ethernet_state_machi_0_o_debug_len[8]"
+                                                "name": "design_1_i/udp_state_machine_0_o_cnt[8]"
                                             },
                                             {
-                                                "name": "design_1_i/ethernet_state_machi_0_o_debug_len[7]"
+                                                "name": "design_1_i/udp_state_machine_0_o_cnt[7]"
                                             },
                                             {
-                                                "name": "design_1_i/ethernet_state_machi_0_o_debug_len[6]"
+                                                "name": "design_1_i/udp_state_machine_0_o_cnt[6]"
                                             },
                                             {
-                                                "name": "design_1_i/ethernet_state_machi_0_o_debug_len[5]"
+                                                "name": "design_1_i/udp_state_machine_0_o_cnt[5]"
                                             },
                                             {
-                                                "name": "design_1_i/ethernet_state_machi_0_o_debug_len[4]"
+                                                "name": "design_1_i/udp_state_machine_0_o_cnt[4]"
                                             },
                                             {
-                                                "name": "design_1_i/ethernet_state_machi_0_o_debug_len[3]"
+                                                "name": "design_1_i/udp_state_machine_0_o_cnt[3]"
                                             },
                                             {
-                                                "name": "design_1_i/ethernet_state_machi_0_o_debug_len[2]"
+                                                "name": "design_1_i/udp_state_machine_0_o_cnt[2]"
                                             },
                                             {
-                                                "name": "design_1_i/ethernet_state_machi_0_o_debug_len[1]"
+                                                "name": "design_1_i/udp_state_machine_0_o_cnt[1]"
                                             },
                                             {
-                                                "name": "design_1_i/ethernet_state_machi_0_o_debug_len[0]"
+                                                "name": "design_1_i/udp_state_machine_0_o_cnt[0]"
                                             }
                                         ]
                                     }
                                 ]
-                            }
-                        ]
-                    }
-                ],
-                "parent_nets": [
-                    {
-                        "id": 9,
-                        "name": "design_1_i/statemachine_test_0/inst/FSM_onehot_r_state_reg[2]_0",
-                        "state_reg": [
+                            },
                             {
-                                "name": "design_1_i/statemachine_test_0/inst/FSM_onehot_r_state_reg[2]",
-                                "states": [
+                                "name": "probe6",
+                                "id": 6,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 7,
+                                "portIndex": 6,
+                                "nets": [
                                     {
-                                        "name": "SFD",
-                                        "val": "010"
-                                    },
-                                    {
-                                        "name": "IDLE",
-                                        "val": "001"
-                                    },
-                                    {
-                                        "name": "SFD_CORRECT",
-                                        "val": "100"
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "id": 10,
-                        "name": "design_1_i/statemachine_test_0/inst/FSM_onehot_r_state_reg[1]_0",
-                        "state_reg": [
-                            {
-                                "name": "design_1_i/statemachine_test_0/inst/FSM_onehot_r_state_reg[1]",
-                                "states": [
-                                    {
-                                        "name": "SFD",
-                                        "val": "010"
-                                    },
-                                    {
-                                        "name": "IDLE",
-                                        "val": "001"
-                                    },
-                                    {
-                                        "name": "SFD_CORRECT",
-                                        "val": "100"
+                                        "name": "design_1_i/ethernet_pipe_stage_0_o_piped_byte",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "design_1_i/ethernet_pipe_stage_0_o_piped_byte[7]"
+                                            },
+                                            {
+                                                "name": "design_1_i/ethernet_pipe_stage_0_o_piped_byte[6]"
+                                            },
+                                            {
+                                                "name": "design_1_i/ethernet_pipe_stage_0_o_piped_byte[5]"
+                                            },
+                                            {
+                                                "name": "design_1_i/ethernet_pipe_stage_0_o_piped_byte[4]"
+                                            },
+                                            {
+                                                "name": "design_1_i/ethernet_pipe_stage_0_o_piped_byte[3]"
+                                            },
+                                            {
+                                                "name": "design_1_i/ethernet_pipe_stage_0_o_piped_byte[2]"
+                                            },
+                                            {
+                                                "name": "design_1_i/ethernet_pipe_stage_0_o_piped_byte[1]"
+                                            },
+                                            {
+                                                "name": "design_1_i/ethernet_pipe_stage_0_o_piped_byte[0]"
+                                            }
+                                        ]
                                     }
                                 ]
                             }

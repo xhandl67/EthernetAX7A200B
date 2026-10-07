@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
-//Date        : Tue Oct  6 01:20:51 2026
+//Date        : Wed Oct  7 01:59:11 2026
 //Host        : killcrafterHD running 64-bit major release  (build 9200)
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -21,35 +21,41 @@ module design_1
   input [3:0]i_eth_data;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.O_ETH_RESET RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.O_ETH_RESET, INSERT_VIP 0, POLARITY ACTIVE_LOW" *) output o_eth_reset;
 
-  wire [7:0]ethernet_state_machi_0_o_data_byte;
-  wire [15:0]ethernet_state_machi_0_o_debug_len;
+  wire [7:0]ethernet_pipe_stage_0_o_piped_byte;
   wire i_eth_clk;
   wire i_eth_ctl;
   wire [3:0]i_eth_data;
   wire o_eth_reset;
   wire [7:0]rgmii_rx_0_o_data;
-  wire [1:0]statemachine_test_0_state;
+  wire [15:0]udp_state_machine_0_o_cnt;
+  wire udp_state_machine_0_o_data_valid;
+  wire [4:0]udp_state_machine_0_o_state;
+  wire [7:0]udp_state_machine_0_o_udp_data;
 
-  design_1_ethernet_state_machi_0_0 ethernet_state_machi_0
+  design_1_ethernet_pipe_stage_0_0 ethernet_pipe_stage_0
        (.i_data_byte(rgmii_rx_0_o_data),
         .i_eth_clk(i_eth_clk),
-        .o_data_byte(ethernet_state_machi_0_o_data_byte),
-        .o_debug_len(ethernet_state_machi_0_o_debug_len));
+        .o_piped_byte(ethernet_pipe_stage_0_o_piped_byte));
   design_1_ila_0_0 ila_0
        (.clk(i_eth_clk),
         .probe0(rgmii_rx_0_o_data),
         .probe1(i_eth_ctl),
-        .probe2(statemachine_test_0_state),
-        .probe3(ethernet_state_machi_0_o_data_byte),
-        .probe4(ethernet_state_machi_0_o_debug_len));
+        .probe2(udp_state_machine_0_o_state),
+        .probe3(udp_state_machine_0_o_udp_data),
+        .probe4(udp_state_machine_0_o_data_valid),
+        .probe5(udp_state_machine_0_o_cnt),
+        .probe6(ethernet_pipe_stage_0_o_piped_byte));
   design_1_rgmii_rx_0_0 rgmii_rx_0
        (.i_eth_clk(i_eth_clk),
         .i_eth_ctl(i_eth_ctl),
         .i_eth_data(i_eth_data),
         .o_data(rgmii_rx_0_o_data),
         .o_eth_reset(o_eth_reset));
-  design_1_statemachine_test_0_0 statemachine_test_0
-       (.i_data_byte(rgmii_rx_0_o_data),
+  design_1_udp_state_machine_0_0 udp_state_machine_0
+       (.i_data_byte(ethernet_pipe_stage_0_o_piped_byte),
         .i_eth_clk(i_eth_clk),
-        .state(statemachine_test_0_state));
+        .o_cnt(udp_state_machine_0_o_cnt),
+        .o_data_valid(udp_state_machine_0_o_data_valid),
+        .o_state(udp_state_machine_0_o_state),
+        .o_udp_data(udp_state_machine_0_o_udp_data));
 endmodule

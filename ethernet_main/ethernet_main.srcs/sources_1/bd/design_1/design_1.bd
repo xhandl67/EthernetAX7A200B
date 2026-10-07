@@ -13,8 +13,8 @@
     "design_tree": {
       "rgmii_rx_0": "",
       "ila_0": "",
-      "statemachine_test_0": "",
-      "ethernet_state_machi_0": ""
+      "ethernet_pipe_stage_0": "",
+      "udp_state_machine_0": ""
     },
     "ports": {
       "i_eth_data": {
@@ -146,13 +146,13 @@
         "has_run_ip_tcl": "true",
         "parameters": {
           "C_DATA_DEPTH": {
-            "value": "1024"
+            "value": "2048"
           },
           "C_MONITOR_TYPE": {
             "value": "Native"
           },
           "C_NUM_OF_PROBES": {
-            "value": "5"
+            "value": "7"
           },
           "C_PROBE0_TYPE": {
             "value": "1"
@@ -170,7 +170,7 @@
             "value": "1"
           },
           "C_PROBE2_WIDTH": {
-            "value": "2"
+            "value": "5"
           },
           "C_PROBE3_TYPE": {
             "value": "1"
@@ -182,26 +182,32 @@
             "value": "1"
           },
           "C_PROBE4_WIDTH": {
-            "value": "16"
+            "value": "1"
           },
           "C_PROBE5_TYPE": {
             "value": "1"
           },
           "C_PROBE5_WIDTH": {
+            "value": "16"
+          },
+          "C_PROBE6_TYPE": {
             "value": "1"
+          },
+          "C_PROBE6_WIDTH": {
+            "value": "8"
           }
         }
       },
-      "statemachine_test_0": {
-        "vlnv": "xilinx.com:module_ref:statemachine_test:1.0",
+      "ethernet_pipe_stage_0": {
+        "vlnv": "xilinx.com:module_ref:ethernet_pipe_stage:1.0",
         "ip_revision": "1",
-        "xci_name": "design_1_statemachine_test_0_0",
-        "xci_path": "ip\\design_1_statemachine_test_0_0\\design_1_statemachine_test_0_0.xci",
-        "inst_hier_path": "statemachine_test_0",
+        "xci_name": "design_1_ethernet_pipe_stage_0_0",
+        "xci_path": "ip\\design_1_ethernet_pipe_stage_0_0\\design_1_ethernet_pipe_stage_0_0.xci",
+        "inst_hier_path": "ethernet_pipe_stage_0",
         "has_run_ip_tcl": "true",
         "reference_info": {
           "ref_type": "hdl",
-          "ref_name": "statemachine_test",
+          "ref_name": "ethernet_pipe_stage",
           "boundary_crc": "0x0"
         },
         "ports": {
@@ -220,23 +226,23 @@
             "left": "7",
             "right": "0"
           },
-          "state": {
+          "o_piped_byte": {
             "direction": "O",
-            "left": "1",
+            "left": "7",
             "right": "0"
           }
         }
       },
-      "ethernet_state_machi_0": {
-        "vlnv": "xilinx.com:module_ref:ethernet_state_machine:1.0",
+      "udp_state_machine_0": {
+        "vlnv": "xilinx.com:module_ref:udp_state_machine:1.0",
         "ip_revision": "1",
-        "xci_name": "design_1_ethernet_state_machi_0_0",
-        "xci_path": "ip\\design_1_ethernet_state_machi_0_0\\design_1_ethernet_state_machi_0_0.xci",
-        "inst_hier_path": "ethernet_state_machi_0",
+        "xci_name": "design_1_udp_state_machine_0_0",
+        "xci_path": "ip\\design_1_udp_state_machine_0_0\\design_1_udp_state_machine_0_0.xci",
+        "inst_hier_path": "udp_state_machine_0",
         "has_run_ip_tcl": "true",
         "reference_info": {
           "ref_type": "hdl",
-          "ref_name": "ethernet_state_machine",
+          "ref_name": "udp_state_machine",
           "boundary_crc": "0x0"
         },
         "ports": {
@@ -255,15 +261,23 @@
             "left": "7",
             "right": "0"
           },
-          "o_data_byte": {
+          "o_udp_data": {
             "direction": "O",
             "left": "7",
             "right": "0"
           },
-          "o_debug_len": {
+          "o_state": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          },
+          "o_cnt": {
             "direction": "O",
             "left": "15",
             "right": "0"
+          },
+          "o_data_valid": {
+            "direction": "O"
           }
         }
       }
@@ -276,25 +290,20 @@
           "rgmii_rx_0/i_eth_ctl"
         ]
       },
-      "ethernet_state_machi_0_o_data_byte": {
+      "ethernet_pipe_stage_0_o_piped_byte": {
         "ports": [
-          "ethernet_state_machi_0/o_data_byte",
-          "ila_0/probe3"
-        ]
-      },
-      "ethernet_state_machi_0_o_debug_len": {
-        "ports": [
-          "ethernet_state_machi_0/o_debug_len",
-          "ila_0/probe4"
+          "ethernet_pipe_stage_0/o_piped_byte",
+          "udp_state_machine_0/i_data_byte",
+          "ila_0/probe6"
         ]
       },
       "i_eth_clk": {
         "ports": [
           "i_eth_clk",
           "ila_0/clk",
-          "statemachine_test_0/i_eth_clk",
           "rgmii_rx_0/i_eth_clk",
-          "ethernet_state_machi_0/i_eth_clk"
+          "udp_state_machine_0/i_eth_clk",
+          "ethernet_pipe_stage_0/i_eth_clk"
         ]
       },
       "i_eth_data_0_1": {
@@ -306,9 +315,8 @@
       "rgmii_rx_0_o_data": {
         "ports": [
           "rgmii_rx_0/o_data",
-          "ila_0/probe0",
-          "statemachine_test_0/i_data_byte",
-          "ethernet_state_machi_0/i_data_byte"
+          "ethernet_pipe_stage_0/i_data_byte",
+          "ila_0/probe0"
         ]
       },
       "rgmii_rx_0_o_eth_reset": {
@@ -317,10 +325,28 @@
           "o_eth_reset"
         ]
       },
-      "statemachine_test_0_state": {
+      "udp_state_machine_0_o_cnt": {
         "ports": [
-          "statemachine_test_0/state",
+          "udp_state_machine_0/o_cnt",
+          "ila_0/probe5"
+        ]
+      },
+      "udp_state_machine_0_o_data_valid": {
+        "ports": [
+          "udp_state_machine_0/o_data_valid",
+          "ila_0/probe4"
+        ]
+      },
+      "udp_state_machine_0_o_state": {
+        "ports": [
+          "udp_state_machine_0/o_state",
           "ila_0/probe2"
+        ]
+      },
+      "udp_state_machine_0_o_udp_data": {
+        "ports": [
+          "udp_state_machine_0/o_udp_data",
+          "ila_0/probe3"
         ]
       }
     }

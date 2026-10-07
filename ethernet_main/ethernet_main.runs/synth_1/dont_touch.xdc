@@ -12,10 +12,10 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_rg
 # IP: bd/design_1/ip/design_1_ila_0_0/design_1_ila_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_ila_0_0 || ORIG_REF_NAME==design_1_ila_0_0} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_statemachine_test_0_0/design_1_statemachine_test_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_statemachine_test_0_0 || ORIG_REF_NAME==design_1_statemachine_test_0_0} -quiet] -quiet
+# IP: bd/design_1/ip/design_1_udp_state_machine_0_0/design_1_udp_state_machine_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_udp_state_machine_0_0 || ORIG_REF_NAME==design_1_udp_state_machine_0_0} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_ethernet_state_machi_0_0/design_1_ethernet_state_machi_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_ethernet_state_machi_0_0 || ORIG_REF_NAME==design_1_ethernet_state_machi_0_0} -quiet] -quiet
+# IP: bd/design_1/ip/design_1_ethernet_pipe_stage_0_0/design_1_ethernet_pipe_stage_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_ethernet_pipe_stage_0_0 || ORIG_REF_NAME==design_1_ethernet_pipe_stage_0_0} -quiet] -quiet
 
 # XDC: c:/01_FPGA_Workspace/EthernetAX7A200B/ethernet_main/ethernet_main.gen/sources_1/bd/design_1/design_1_ooc.xdc
